@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class StudentInfo extends StatelessWidget {
   const StudentInfo({super.key});
@@ -162,13 +164,27 @@ class StudentInfo extends StatelessWidget {
                 child: const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    CircularProgressIndicator(
-                      strokeCap: StrokeCap.round,
-                      // backgroundColor: Colors.green,
-                      // color: Colors.grey[900],
-                      valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
-                      // semanticsValue: '0.5',
-                      value: 0.8,
+                    Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        CircularProgressIndicator(
+                          strokeCap: StrokeCap.round,
+                          
+                          // backgroundColor: Colors.green,
+                          // color: Colors.grey[900],
+                          valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+                          // semanticsValue: '0.5',
+                          value: 0.8,
+                        ),
+
+                        Text('80%',
+                        
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 13,
+                         
+                        ),),
+                      ],
                     ),
                     SizedBox(
                       height: 15,
@@ -194,13 +210,26 @@ class StudentInfo extends StatelessWidget {
                 child: const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    CircularProgressIndicator(
-                      strokeCap: StrokeCap.round,
-                      // backgroundColor: Colors.green,
-                      // color: Colors.grey[900],
-                      valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
-                      // semanticsValue: '0.5',
-                      value: 0.3,
+                    Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        CircularProgressIndicator(
+                          strokeCap: StrokeCap.round,
+                          // backgroundColor: Colors.green,
+                          // color: Colors.grey[900],
+                          valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+                          // semanticsValue: '0.5',
+                          value: 0.3,
+                        ),
+
+                        Text('30%',
+                        
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 13,
+                         
+                        ),),
+                      ],
                     ),
                     SizedBox(
                       height: 15,
@@ -226,13 +255,26 @@ class StudentInfo extends StatelessWidget {
                 child: const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    CircularProgressIndicator(
-                      strokeCap: StrokeCap.round,
-                      // backgroundColor: Colors.green,
-                      // color: Colors.grey[900],
-                      valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
-                      // semanticsValue: '0.5',
-                      value: 0.9,
+                    Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        CircularProgressIndicator(
+                          strokeCap: StrokeCap.round,
+                          // backgroundColor: Colors.green,
+                          // color: Colors.grey[900],
+                          valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+                          // semanticsValue: '0.5',
+                          value: 0.6,
+                        ),
+
+                        Text('60%',
+                        
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 13,
+                         
+                        ),),
+                      ],
                     ),
                     SizedBox(
                       height: 15,
